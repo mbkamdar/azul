@@ -116,18 +116,3 @@ def starting_player(players):
     x = random.randint(0, len(players)-1)
     players[x].starter = 1
     return x
-
-# To test code
-if __name__ == "__main__":
-    player1 = Player("Annie")
-    print(player1.name)
-    print("Starter?", player1.starter)
-    print("Score =", player1.score)
-    print("Wall:")
-    for x in player1.wall:
-        print(list(x.items()))
-    print("Pattern Lines:")
-    for x in player1.pattern_lines:
-        print(x)
-    print("Floor:")
-    print(player1.floor)
